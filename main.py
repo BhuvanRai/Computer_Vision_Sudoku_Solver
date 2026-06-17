@@ -3,11 +3,11 @@ import numpy as np
 import imutils
 from imutils.perspective import four_point_transform
 import tensorflow as tf
-from sudoku_solver import Sudoku
+from Computer_Vision_Sudoku_Solver.sudoku_solver import Sudoku
 import copy
 
 model = tf.keras.models.load_model(
-    r"F:\Coding\project\Computer_vision_sudoku_solver\mnist_digit_model3_finetuned_on_1_and_5.keras"
+    r"model_path"
 )
 
 sudo_collection = [[[0]*30 for _ in range(9)] for _ in range(9)]
